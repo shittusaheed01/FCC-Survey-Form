@@ -11,32 +11,26 @@
 </head>
 <body>
  <!--Header-->
- <section id='main'>
  <header>
   <h1 id="title">Twitter Survey Form</h1>
-  <p id='description'><i>Thank you for taking the time to help us improve the platform</i></p>
+  <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
  </header>
  <!--Form-->
  <div>
   <!--Name-->
-  <form id='survey-form' action="https://formspree.io/f/xbjpylre" method="POST">
-   <label for='name' id='name-label'>Name</label><br>
-   <input type="text" name='name' id='name' placeholder="Enter Your Name" required>
-   <br>
-   <br>
+  <form id="survey-form" action="https://formspree.io/f/xbjpylre" method="POST">
+   <label for="name" id="name-label" class="container">Name
+   <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    </label> 
    <!--Email-->
-   <label for='email' id="email-label" required>Email</label><br>
-   <input type="email" name='email' id='email' placeholder="Enter Your Email">
-   <br>
-   <br>
+   <label for="email" id="email-label" class="container" required>Email
+   <input type="email" name="email" id="email" placeholder="Enter Your Email"></label>
    <!--Age-->
-   <label for='number-label' id="number-label">Age (optional)</label><br>
-   <input type="number" name="age" id='number' min='10' max='99' placeholder="Age">
-   <br>
-   <br>
+   <label for="number-label" id="number-label" class="container">Age (optional)
+   <input type="number" name="age" id="number" min="10" max="9" placeholder="Age"></label>
    <!--First Dropdown-->
-   <label for='dropdown' id='dropdown-label'>Do you use twitter?</label><br>
-   <select id='dropdown' name='usage_of_twitter' placeholder='Select an answer'>
+   <label for="dropdown" id="dropdown-label" class="container">Do you use twitter?</label>
+   <select id="dropdown" name="usage_of_twitter" placeholder="Select an answer">
     <option value="" disabled selected hidden>Select an answer</option>
     <option value="Yes">Yes</option>
     <option value="No">No</option>
@@ -44,64 +38,65 @@
     <option value="Prefer-not-to-say">Prefer not to say</option>
     <option value="Other">Other</option>
    </select>
-   <br>
-   <br>
    <!--First Group of RadioBoxes-->
    <fieldset>
     <legend>How do you access your Twitter account?</legend>
-    <label for='desktop' class='container'>
-    <input type="radio" id='desktop' value='desktop' name="access">
-    Desktop computer</label>
-    <label for='laptop' class='container'>
-    <input type="radio" id='laptop' value='laptop' name="access">
-    Laptop computer</label>
-    <label for='mobile' class='container'>
-    <input type="radio" id='mobile' value='mobile' name='access'>
-    Mobile</label>
-    <label for='tablet' class='container'>
-    <input type="radio" id='tablet' value='tablet' name='access'>
-    Tablet</label>
+    <label for="desktop" class="container">
+        <input type="radio" id="desktop" value="desktop" name="access">
+    Desktop computer
+    </label>
+    <label for="laptop" class="container">
+        <input type="radio" id="laptop" value="laptop" name="access">
+    Laptop computer
+    </label>
+    <label for="mobile" class="container">
+        <input type="radio" id="mobile" value="mobile" name="access">
+    Mobile
+    </label>
+    <label for="tablet" class="container">
+        <input type="radio" id="tablet" value="tablet" name="access">
+    Tablet
+    </label>
 </fieldset>
    <!--Second DropBox-->
-   <label for='favorite-feature' id='favorite-label'>What is your favourite feature of Twitter?</label><br>
-   <select id='favorite-feature' name='feature' placeholder='Select favourite feature'>
+   <label for="favorite-feature" id="favorite-label">What is your favourite feature of Twitter?</label>
+   <select id="favorite-feature" name="feature" placeholder="Select favourite feature">
     <option value="" disabled selected hidden>Select an option</option>
     <option value="fleets">Fleets</option>
     <option value="trends">Trends</option>
     <option value="retweets">Retweets</option>
     <option value="likes">Likes</option>
    </select>
-   <br>
-   <br>
    <!--CheckBoxes-->
    <fieldset>
     <legend>When you want to learn about other companies and the products or services they ofeer, whixh tone do you appreciate? (Check all that apply)</legend>
-    <label for="friendly" class='container'>
-    <input type="checkbox" value='front-end-projects' id='friendly' name='learn'>
-    Friendly</label>
-    <label for="informative" class='container'>
-    <input type="checkbox" value='informative' id='informative' name='learn'>
-    Informative</label>
-    <label for="humorous" class='container'>
-    <input type="checkbox" value='humorous' id='humorous' name='learn'>
-    Humorous</label>
-    <label for="serious" class='container'>
-    <input type="checkbox" value='serious' id='serious' name='learn'>
-    Serious</label>
-    <label for="educational" class='container'>
-    <input type="checkbox" value='educational' id='educational' name='learn'>
-    Educational</label>
+    <label for="friendly" class="container">
+        <input type="checkbox" value="front-end-projects" id="friendly" name="learn">
+    Friendly
+    </label>
+    <label for="informative" class="container">
+        <input type="checkbox" value="informative" id="informative" name="learn">
+    Informative
+    </label>
+    <label for="humorous" class="container">
+        <input type="checkbox" value="humorous" id="humorous" name="learn">
+    Humorous
+    </label>
+    <label for="serious" class="container">
+        <input type="checkbox" value="serious" id="serious" name="learn">
+    Serious
+    </label>
+    <label for="educational" class="container">
+        <input type="checkbox" value="educational" id="educational" name="learn">
+    Educational
+    </label>
    </fieldset>
    <!--Comment Section-->
-   <label for='comment' id='comment-label'>Any comments or suggestions?</label>
-    <textarea name="comment" id='comment' placeholder="Enter your comments here...">
+   <label for="comment" id="comment-label">Any comments or suggestions?</label>
+    <textarea name="comment" id="comment" placeholder="Enter your comments here...">
        </textarea>
-   <br>
-   <br>
    <!--Submit-->
-   <button type="submit" id='submit'>Submit</button>
-   <br>
-   <br>
+   <button type="submit" id="submit">Submit</button>
   </form>
  </div>
 </section>
